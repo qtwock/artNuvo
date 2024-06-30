@@ -1,0 +1,221 @@
+.site-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around; /* Располагаем элементы по краям шапки */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  font-family: Courier New, sans-serif;
+}
+
+.site-nav {
+  margin-left: 40px;
+  padding-inline: -10%;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  margin-right: 5%;
+}
+
+.left-section {
+  margin-right: 0;
+}
+
+
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #d9a46f;
+}
+
+.link1 {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 46px;
+  position: relative;
+}
+
+.link1::before,
+.link1::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #d9a46f;
+  transition: all 0.6s ease;
+  transform: scaleX(0);
+}
+
+.link1::before{
+  top: 0;
+  left: 0;
+  transform-origin: left;
+}
+
+.link1::after{
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+.link1:hover::before,
+.link1:hover::after{
+  transform: scaleX(1);
+}
+
+.additional-links a {
+  margin-left: 10px; /* Отступ между дополнительными ссылками */
+}
+
+      /* Общие стили для всех иконок */
+      .wrapper{
+        display: inline-flex;
+      }
+
+      /* Стили для иконок */
+      .wrapper .icon{
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.68, -0.55,0.265,1.55);
+      }
+
+      /* Стили для оболочки иконок */
+      .wrapper .icon span{
+        position: relative;
+        height: 60px;
+        width: 60px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.0);
+        border-radius: 50%;
+        text-align: center;
+        z-index: 2;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-out;
+      }
+
+      /* Стили для иконок WhatsApp */
+      .wrapper .icon span img{
+        width: 30px;
+        height: 30px;
+        margin-top: 25%;
+      }
+
+      /* Изменение цвета текста при наведении на иконку */
+      .wrapper .icon:hover span{
+        color: #fff;
+      }
+
+.wrapper .icon .tooltip{
+  position: absolute;
+  top: 0px;
+  background: #1ac422;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55,0.265,1.55);
+}
+
+/* Отображение всплывающей подсказки при наведении на иконку */
+.wrapper .icon:hover .tooltip{
+  top: 70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Стили для треугольника у всплывающей подсказки */
+.wrapper .icon .tooltip:before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #1ac422;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55,0.265,1.55);
+}
+
+      /* Изменение цвета при наведении на иконку Nomer */
+      .wrapper .nomer:hover span,
+      .wrapper .nomer:hover .tooltip,
+      .wrapper .nomer:hover .tooltip:before{
+        background-color: #1ac422;
+      }
+
+      /* Изменение цвета при наведении на иконку WhatsApp */
+      .wrapper .whatsapp:hover span,
+      .wrapper .whatsapp:hover .tooltip,
+      .wrapper .whatsapp:hover .tooltip:before{
+        background-color: #00a859;
+      }
+
+      /* Изменение цвета при наведении на иконку Telegram */
+      .wrapper .telegram:hover span,
+      .wrapper .telegram:hover .tooltip,
+      .wrapper .telegram:hover .tooltip:before{
+        background-color: #0078ff;
+      }
+
+      /* Изменение цвета при наведении на иконку Vkontakte */
+      .wrapper .vkontakte:hover span,
+      .wrapper .vkontakte:hover .tooltip,
+      .wrapper .vkontakte:hover .tooltip:before{
+        background-color: #0078ff;
+      }
+
+@media (max-width: 1200px){
+  
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 768px){
+  
+}
+
+@media (max-width: 480px){
+  
+}
+
+@media (max-width: 320px){
+  
+}

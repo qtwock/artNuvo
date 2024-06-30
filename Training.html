@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ArtNuvo</title>
+    <link rel="shortcut icon" type="image/jpg" href="Img/Logo1.png">
+    <link rel="stylesheet" type="text/css" href="Header1.css">
+    <link rel="stylesheet" type="text/css" href="Podval.css">
+    <link rel="stylesheet" type="text/css" href="Form.css">
+    <link rel="stylesheet" type="text/css" href="StyleTR.css">
+    <link rel="stylesheet" type="text/css" href="Zapic.css">
+  </head>
+
+    <body>
+<header class="site-header">
+  <div class="left-section">
+    <img src="Img/Logo1.png" alt="Логотип" width="70px" height="70px">
+    <img src="Img/ArtNuvo.png" alt="Логотип" width="140px" height="40px" style="margin-left: -410px ;">
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html" class="link1">Главная</a></li>
+        <li><a href="Services.html" class="link1">Услуги</a></li>
+        <li><a href="Training.html" class="link1">Обучение</a></li>
+        <li><a href="Contacts.html" class="link1">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="right-section">
+    <div class="wrapper">
+
+    <!-- Иконка Nomer -->
+    <div class="icon nomer" data-default="Img/Nomer.png" data-hover="Img/Nomer1.png">
+      <div class="tooltip">+7(912)345-67-89</div>
+      <!-- Всплывающая подсказка -->
+      <!-- Иконка -->
+      <span><img src="Img/Nomer.png" alt="Nomer"></span>
+    </div>
+
+    <!-- Иконка WhatsApp -->
+    <div class="icon whatsapp" data-default="Img/WA.png" data-hover="Img/WA1.png">
+      <!-- Всплывающая подсказка -->
+      <!-- Иконка -->
+      <span><img src="Img/WA.png" alt="WhatsApp"></span>
+    </div>
+
+    <!-- Иконка Telegram -->
+    <div class="icon telegram" data-default="Img/TG.png" data-hover="Img/TG1.png">
+      <!-- Всплывающая подсказка -->
+      <!-- Иконка -->
+      <span><img src="Img/TG.png" alt="Telegram"></span>
+    </div>
+
+    <!-- Иконка VK -->
+    <div class="icon vkontakte" data-default="Img/VK.png" data-hover="Img/VK1.png">
+      <!-- Всплывающая подсказка -->
+      <!-- Иконка -->
+      <a href="https://vk.com/missenndecor" target="_blank" rel="noopener noreferrer">
+        <span><img src="Img/VK.png" alt="vkontakte"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+  var icons = document.querySelectorAll('.wrapper .icon');
+
+  icons.forEach(function(icon) {
+    var img = icon.querySelector('img');
+    var defaultSrc = img.getAttribute('src'); // Получаем путь к изображению по умолчанию
+    var hoverSrc = icon.getAttribute('data-hover'); // Получаем путь к изображению при наведении
+
+    icon.addEventListener('mouseover', function() {
+      img.src = hoverSrc; // Заменяем изображение при наведении
+    });
+
+    icon.addEventListener('mouseout', function() {
+      img.src = defaultSrc; // Возвращаем изображение по умолчанию при уводе курсора
+    });
+  });
+});
+  </script>
+  <script>
+    // Находим все элементы с классом "vkontakte" и добавляем им обработчик клика
+document.querySelectorAll('.vkontakte').forEach(function(elem) {
+  elem.addEventListener('click', function(event) {
+    // Отменяем стандартное действие клика на ссылку
+    event.preventDefault();
+    // Получаем ссылку из атрибута href ссылки внутри элемента
+    var href = this.querySelector('a').getAttribute('href');
+    // Открываем ссылку в новой вкладке
+    window.open(href, '_blank');
+  });
+});
+  </script>
+  </div>
+
+</header>
+
+<div class="Usl">
+    <p>ОБУЧЕНИЕ</p>
+</div>
+
+<div class="UslQ">
+  <p>Школа мастеров «АртНуво» - для тех, кто ищет новые горизонты в декоре. Обучение для декораторов 
+    и профессионалов, готовых воплотить идеи в искусство декоративных работ и присоединиться 
+    к нашей команде.</p>
+    <img src="Img/Uslugi.jpg">
+</div>
+
+<div class="Stud">
+  <img src="Img/Stud.png">
+  <p>Учебная программа в "АртНуво" не только дает практические навыки, но и подготавливает 
+    к успешной работе в декоративной сфере. Мы охватываем широкий спектр тем: от техник 
+    до дизайнерских концепций и выбора материалов.</p>
+</div>
+
+<div class="Opyt">
+  <p>В "АртНуво" ученики получают опыт на реальных проектах и 
+    участвуют в мастер-классах с профессионалами ведущих декораторов.</p>
+    <img src="Img/Opyt.jpg" alt="Опыт">
+</div>
+
+<div class="Ccel">
+  <p>Наша цель - обучить специалистов создавать уникальные интерьеры для разных объектов: 
+    от жилых до коммерческих и общественных пространств.</p>
+    <img src="Img/Ccel.jpg" alt="Опыт">
+</div>
+
+<div class="Kurs">
+  <p>КУРС ОБУЧЕНИЯ</p>
+</div>
+
+<div class="KursK" id="KursK">
+  <p>Приглашаем на интенсивный курс "Мастер декоратор" в школе "АртНуво"! Освоите техники 
+    декоративных покрытий и раскройте свой творческий потенциал.
+    <br><br> Подробности в PDF-нашем журнале 
+    или при связи с нами. Присоединяйтесь к креативной команде "АртНуво" и откройте новые 
+    возможности в мире декора!</p>
+    <img src="Img/Kurs.jpg">
+    <a href="Школа.pdf" class="pdf-link" target="_blank">PDF</a>
+</div>
+
+<div class="Zap" id="Zap">
+  <p class="p1">
+    ЗАПИСЬ НА ОБУЧЕНИЕ
+    
+    <div class="Zapic">
+          <div class="title">Ваши контакты</div>
+          <div class="subtitle">Мы свяжемся в ближайшее время</div>
+    
+          <div class="input-container ic1">
+            <input placeholder="" type="text" class="input" id="firstname">
+            <div class="cut"></div>
+            <label class="placeholder" for="firstname">Имя</label>
+          </div>
+    
+          <div class="input-container ic2">
+            <input placeholder="" type="text" class="input" id="phone" required maxlength="19">
+            <div class="cut"></div>
+            <label class="placeholder" for="phone">Телефон</label>
+          </div>
+          <div class="input-container ic2">
+            <input placeholder="" type="text" class="input" id="email">
+            <div class="cut cut-short"></div>
+            <label class="placeholder" for="email">Email</label>
+          </div>
+          <button class="submit" type="text">Подтвердить</button>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const phoneInput = document.getElementById('phone');
+    
+      phoneInput.addEventListener('focus', function () {
+        if (!phoneInput.value.startsWith('+7')) {
+          phoneInput.value = '+7 ';
+        }
+      });
+    
+      phoneInput.addEventListener('input', function () {
+        let phoneValue = phoneInput.value.replace(/\D/g, '');
+        
+        if (!phoneValue.startsWith('7')) {
+          phoneValue = '7' + phoneValue;
+        }
+    
+        if (phoneValue.length > 11) {
+          phoneValue = phoneValue.slice(0, 11);
+        }
+    
+        const formattedPhone = phoneValue.replace(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/, '+$1 ($2) $3-$4-$5');
+        phoneInput.value = formattedPhone;
+      });
+    
+      phoneInput.addEventListener('keydown', function (e) {
+        if (phoneInput.value.startsWith('+7') && e.key === 'Backspace' && phoneInput.selectionStart <= 3) {
+          e.preventDefault();
+        }
+      });
+    });
+    </script>
+  </div>
+
+  <div class="Podval">
+    <div class="ConPodval1">
+      <div class="map">
+        <div class="script8">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa96077b13825e8368b8f44d8e6f515f9619d1c73a47e298289bb2c2b4b36faa5&amp;width=777&amp;height=502&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+      <p><span style="font-size:55px; font-family:Noto Serif Display;  letter-spacing: 20px;">Мы на карте</span>
+        <br>
+        <br>
+      Адрес: Вилеровский переулок 8, посёлок Шушары, Пушкинский район, Санкт-Петербург.
+      <br>
+      <br>
+      20 минут от станции метро Купчино
+      <br>
+      <br>
+      Мы работаем со Вторника по Воскресенье, с 11:00-19:00
+    </p>
+    </div>
+    <div class="ConPodval2">
+      <div class="menu">
+        <p style="text-decoration: underline;">Меню</p>
+        <a href="index.html" class="linMenu">Главная</a>
+        <a href="Services.html" class="linMenu">Услуги</a>
+        <a href="Training.html" class="linMenu">Обучение</a>
+        <a href="Contacts.html" class="linMenu">Контакты</a>
+      </div>
+  
+      <div class="Ssylki">
+        <a href="Services.html#DP" class="linMenu">Виды услуг</a>
+        <a href="Services.html#block2" class="linMenu">Примерный стиль оформления</a>
+        <a href="Services.html#Request" class="linMenu">Заявка на услугу</a>
+        <a href="Training.html#KursK" class="linMenu">Курс обучения</a>
+        <a href="Training.html#Zap" class="linMenu">Запись на обучение</a>
+      </div>
+      
+      <p class="p2"><img src="Img/Nomer1.png" width="15px" height="15px">
+        <span style="font-family: Times New Roman; color: #c6c6c6;">+7(123)456-78-90 </span>
+        <br>
+        <img src="Img/pochta.png" width="15px" height="15px">
+        <span style="color: #c6c6c6;">artnuvo@mail.ru</span>
+        <br>
+        <br>
+        <span style="font-size: 15px">Данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой. ИП Абашкина Анастасия Васильевна, ИНН 507306368736, ОГРНИП 324508100135116. Все права защищены. АртНуво, 2020-2024</span></p>
+    </div>
+  </div>
+
+    </body>
+    </html>

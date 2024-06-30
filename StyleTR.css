@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Forum&family=Lobster&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lobster&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&family=Lobster&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Forum&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+/*
+Ysabeau SC
+Poiret One
+EB Garamond
+Noto Serif Display
+Playfair Display
+Amatic SC
+*/
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #d9a46f;
+  border-radius: 10px;
+  border: 2px solid #474847;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #474847;
+}
+
+body{
+  margin: 0;
+  padding: 0;  
+  background: url(img/Fon2.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: local;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: top center;
+}
+
+.Usl{
+    top: 8.2%;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .Usl p{
+    font-size: 55px;
+    font-family: "Noto Serif Display", sans-serif;
+    letter-spacing: 40px;
+    color: #fff;
+    margin-top: 0;
+  }
+
+  .UslQ{
+    top: 20%;
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+  }
+  
+  .UslQ p{
+    font-size: 40px;
+    font-family: "Playfair Display", sans-serif;
+    color: #fff;
+    margin-top: 0;
+    padding-inline: 5px;
+    margin-right: 50%;
+    padding-top: 7%;
+    padding-left: 6%;
+    line-height: 1.2em;
+    text-align: justify;
+  }
+  .UslQ img{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 700px;
+    height: 100%;
+  }
+
+  .Stud{
+    position: absolute;
+    top: 90%;
+    width: 80%;
+    height: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .Stud p{
+    position: absolute;
+    margin-left: 60%;
+    padding-top: 10%;
+    padding-right: 6%;
+    font-size: 28px;
+    font-family: "Playfair Display", sans-serif;
+    color: #000;
+    text-align: justify;
+  }
+
+  .Stud img{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 600px;
+    height: 100%;
+  }
+
+  .Opyt{
+    position: absolute;
+    top: 155%;
+    width: 80%;
+    height: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+
+  .Opyt p{
+    position: absolute;
+    margin-right: 55%;
+    padding-top: 6%;
+    padding-left: 10%;
+    font-size: 28px;
+    font-family: "Playfair Display", sans-serif;
+    color: #000;
+    text-align: justify;
+  }
+
+  .Opyt img{
+    position: absolute;
+    right: 5%;
+    top: 0;
+    width: 668px;
+    height: 100%;
+  }
+
+  .Ccel{
+    position: absolute;
+    top: 196%;
+    width: 80%;
+    height: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+
+  .Ccel p{
+    position: absolute;
+    margin-left: 55%;
+    padding-top: 5%;
+    padding-right: 10%;
+    font-size: 28px;
+    font-family: "Playfair Display", sans-serif;
+    color: #000;
+    text-align: justify;
+  }
+
+  .Ccel img{
+    position: absolute;
+    left: 5%;
+    top: 0;
+    width: 668px;
+    height: 100%;
+  }
+
+  .Kurs{
+    position: absolute;
+    top: 245%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    font-size: 60px;
+    letter-spacing: 20px;
+    font-family: "Noto Serif Display", sans-serif;
+    color: #000;
+  }
+
+  .Kurs p{
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
+  }
+
+  .KursK{
+    position: absolute;
+    top: 260%;
+    width: 80%;
+    height: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .KursK p{
+    position: absolute;
+    font-size: 28px;
+    font-family: "Playfair Display", sans-serif;
+    text-align: justify;
+    background-color: #fff;
+    width: 40%;
+    left: 2%;
+    top: 5%;
+    padding-inline: 3%;
+    padding-block: 3%;
+  }
+
+  .KursK img{
+    position: absolute;
+    top: 0;
+    right: 3%;
+    height: 100%;
+  }
+
+  .KursK a{
+    position: absolute;
+    top: 80%;
+    color: #164f53;
+    width: 15%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    background-color: #e2e2e2;
+    border-radius: 25px;
+    font-family: "Playfair Display", sans-serif;
+    left: 10%;
+    text-decoration:underline;
+    box-shadow: 0px 8px 1px #757171;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .KursK a:hover{
+    background-color: #76968b;
+    color: #fff;
+  }
+
+  .KursK a:active{
+    color: #fff;
+    background-color: #76968b;
+  }
+
+  .Zap{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 340%
+  }
+
+  .Zap .p1{
+    position: absolute;
+    font-size: 60px;
+    letter-spacing: 20px;
+    font-family: "Noto Serif Display", sans-serif;
+    color: #000;
+    left: 15%;
+    top: -5%;
+  }
+
+  .Podval{
+    position: absolute;
+    top: 425%;
+    width: 100%;
+    height: 100%;
+  }

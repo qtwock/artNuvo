@@ -1,0 +1,126 @@
+.block6 .b6{
+  position: absolute;
+  top: 15%;
+  width: 60%;
+  height: 80%;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.b6 p{
+  position: absolute;
+  left: 2%;
+}
+
+.b6 .v1{
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 85%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.b6 .v2{
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 85%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.b6 .v3{
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 85%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.b6 .v4{
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 85%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.b6 .v5{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 85%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.b6 .v6{
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 85%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.b6 .v7{
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 85%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.b6 .v8{
+  position: absolute;
+  top: 86%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 85%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Ysabeau SC", sans-serif;
+}

@@ -1,0 +1,109 @@
+.Podval .ConPodval1{
+    height: 70%;
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .map{
+    width: 777px;
+    height: 502px;
+    margin-top: 15%;
+    margin-left: 30%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px #000;
+  }
+  
+  .ConPodval1 p{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #000;
+    margin-left: -20%;
+    left: 50%;
+    transform: translate(0, 0);
+  }
+  
+  .Podval .ConPodval2{
+    height: 30%;
+    width: 100%;
+    background-image: url(img/pod.jpg);
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu{
+    text-align: left;
+    display: grid;
+    margin-left: 5%;
+  }
+  
+  .menu p{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 25px;
+    color: #1d1d1d;
+    letter-spacing: 5px;
+  }
+
+  .linMenu{
+    position: relative;
+    font-size: 20px;
+    font-family: "Playfair Display", sans-serif;
+    color:  #1d1d1d;
+    letter-spacing: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .linMenu:hover{
+    color: #ffffff;
+  }
+
+  .Ssylki{
+    width: 1250px;
+    display: grid;
+    margin-left: 8%;
+
+  }
+  
+  .ConPodval2 .allrights{
+    display: flex;
+  }
+
+
+  .allrights .p1{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 18px;
+    text-align: left;
+    color: #1d1d1d;
+    margin-left: 20%;
+    margin-right: 5%;
+    letter-spacing: 5px;
+  }
+
+  @media (max-width: 1200px){
+    .Podval .ConPodval1{
+      display: block;
+    }
+
+    .map{
+      margin-top: 0%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0px 0px 10px #000;
+    }
+
+    .ConPodval1 p{
+      font-size: 20px;
+      margin-left: 0%;
+      transform: translate(0, 0);
+    }
+  }
+  
+  @media (max-width: 992px){
+  }
+  
+  @media (max-width: 768px){
+  }

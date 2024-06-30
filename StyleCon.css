@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Forum&family=Lobster&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lobster&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&family=Lobster&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Forum&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+/*
+Ysabeau SC
+Poiret One
+EB Garamond
+Noto Serif Display
+Playfair Display
+Amatic SC
+*/
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #d9a46f;
+  border-radius: 10px;
+  border: 2px solid #474847;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #474847;
+}
+
+body{
+  margin: 0;
+  padding: 0;  
+  background: url(img/Fon2.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: local;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: top center;
+}
+
+.Cont{
+    top: 10%;
+    position: absolute;
+    width: 80%;
+    height: 85%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: left;
+    background-color: #1e3c45;
+    background-size: cover;
+  }
+  
+  .Cont .p1{
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    font-size: 120px;
+    font-family: "Noto Serif Display", sans-serif;
+    color: #07242d;
+    letter-spacing: 20px;
+  }
+
+  .Cont .p2{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 25px;
+    font-family: "Poiret One", sans-serif;
+    color: #fff;
+  }
+
+  .Cont .p3{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 25px;
+    font-family: "Poiret One", sans-serif;
+    color: #fff;
+  }
+
+  .Cont .Cq{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+  }
+
+  .Cont .CA{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 25%;
+    height: 50%;
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Poiret One", sans-serif;
+  }
+
+  .Cq .Tel{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    align-items: center;
+  }
+
+  .Cq .Mail{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    align-items: center;
+  }
+
+  .Cq .wtsp{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    align-items: center;
+  }
+
+  .Cq .tgrm{
+    position: absolute;
+    bottom: 10%;
+    right: 13%;
+    align-items: center;
+  }
+
+  .Tel, .Mail,
+  .wtsp, .tgrm{
+    font-size: 25px;
+    font-family: "Poiret One", sans-serif;
+    color: #fff;
+  }
+
+  .linkQ{
+    position: absolute;
+    bottom: 13%;
+    left: 27%;
+    color: #fff;
+    font-family: "Poiret One", sans-serif;
+    font-size: 25px;
+  }

@@ -1,0 +1,50 @@
+
+@media (max-width: 1200px) {
+    .blockQ {
+        width: 470px;
+        top: 110px;
+        left: 20px;
+        height: 331px;
+    }
+
+    .blockQ img {
+        width: 470px;
+        height: 331px;
+    }
+
+    .background-options img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Pod1,
+    .Pod2,
+    .Pod3,
+    .Pod4,
+    .Pod5,
+    .Pod6,
+    .Pod7,
+    .Pod8,
+    .Pod9,
+    .Pod10,
+    .Pod11,
+    .Pod12,
+    .Pod13,
+    .Pod14,
+    .Pod15 {
+        font-size: 19px;
+    }
+
+    .block2a .pDP {
+        font-size: 25px;
+    }
+
+    .block2a .pT {
+        font-size: 25px;
+    }
+
+    .block2a img{
+        width: 80px;
+        height: 80px;
+    }
+}

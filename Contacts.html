@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ArtNuvo</title>
+  <link rel="shortcut icon" type="image/jpg" href="Img/Logo1.png">
+  <link rel="stylesheet" type="text/css" href="Header1.css">
+  <link rel="stylesheet" type="text/css" href="Podval.css">
+  <link rel="stylesheet" type="text/css" href="Form.css">
+  <link rel="stylesheet" type="text/css" href="StyleCon.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="left-section">
+      <img src="Img/Logo1.png" alt="Логотип" width="70px" height="70px">
+      <img src="Img/ArtNuvo.png" alt="Логотип" width="140px" height="40px" style="margin-left: -410px ;">
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html" class="link1">Главная</a></li>
+          <li><a href="Services.html" class="link1">Услуги</a></li>
+          <li><a href="Training.html" class="link1">Обучение</a></li>
+          <li><a href="Contacts.html" class="link1">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right-section">
+      <div class="wrapper">
+
+        <!-- Иконка Nomer -->
+        <div class="icon nomer" data-default="Img/Nomer.png" data-hover="Img/Nomer1.png">
+          <div class="tooltip">+7(912)345-67-89</div>
+          <!-- Всплывающая подсказка -->
+          <!-- Иконка -->
+          <span><img src="Img/Nomer.png" alt="Nomer"></span>
+        </div>
+
+        <!-- Иконка WhatsApp -->
+        <div class="icon whatsapp" data-default="Img/WA.png" data-hover="Img/WA1.png">
+          <!-- Всплывающая подсказка -->
+          <!-- Иконка -->
+          <span><img src="Img/WA.png" alt="WhatsApp"></span>
+        </div>
+
+        <!-- Иконка Telegram -->
+        <div class="icon telegram" data-default="Img/TG.png" data-hover="Img/TG1.png">
+          <!-- Всплывающая подсказка -->
+          <!-- Иконка -->
+          <span><img src="Img/TG.png" alt="Telegram"></span>
+        </div>
+
+        <!-- Иконка VK -->
+        <div class="icon vkontakte" data-default="Img/VK.png" data-hover="Img/VK1.png">
+          <!-- Всплывающая подсказка -->
+          <!-- Иконка -->
+          <a href="https://vk.com/missenndecor" target="_blank" rel="noopener noreferrer">
+            <span><img src="Img/VK.png" alt="vkontakte"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        var icons = document.querySelectorAll('.wrapper .icon');
+
+        icons.forEach(function (icon) {
+          var img = icon.querySelector('img');
+          var defaultSrc = img.getAttribute('src'); // Получаем путь к изображению по умолчанию
+          var hoverSrc = icon.getAttribute('data-hover'); // Получаем путь к изображению при наведении
+
+          icon.addEventListener('mouseover', function () {
+            img.src = hoverSrc; // Заменяем изображение при наведении
+          });
+
+          icon.addEventListener('mouseout', function () {
+            img.src = defaultSrc; // Возвращаем изображение по умолчанию при уводе курсора
+          });
+        });
+      });
+    </script>
+    <script>
+      // Находим все элементы с классом "vkontakte" и добавляем им обработчик клика
+      document.querySelectorAll('.vkontakte').forEach(function (elem) {
+        elem.addEventListener('click', function (event) {
+          // Отменяем стандартное действие клика на ссылку
+          event.preventDefault();
+          // Получаем ссылку из атрибута href ссылки внутри элемента
+          var href = this.querySelector('a').getAttribute('href');
+          // Открываем ссылку в новой вкладке
+          window.open(href, '_blank');
+        });
+      });
+    </script>
+    </div>
+
+  </header>
+
+  <div class="Cont">
+    <p class="p1">КОНТАКТЫ</p>
+    <p class="p2">Здесь основные способы связаться с нами</p>
+    <div class="CA">
+      <p>Наш Адрес:</p>
+      <p>Вилеровский переулок 8, посёлок Шушары, Пушкинский район, Санкт-Петербург.</p>
+    </div>
+
+    <div class="Cq">
+      <div class="Tel">
+        <p>Телефон:</p>
+        <p>+7(912)345-67-89</p>
+      </div>
+
+      <div class="Mail">
+        <p>Почта:</p>
+        <p>artnuvo@mail</p>
+      </div>
+
+      <div class="wtsp">
+        <p>Наш WhatsApp:</p>
+        <p>ArtNuvo</p>
+      </div>
+
+      <div class="tgrm">
+        <p>Наш Telegram:</p>
+        <p>ArtNuvo</p>
+      </div>
+    </div>
+    <p class="p3">Следите за новостями в VK:</p>
+    <a href="https://vk.com/missenndecor" class="linkQ" target="_blank">АртНуво мастерская декоративных штукатурок</a>
+    <img src="Img/Cont.jpg" width="30%" height="100%" style="position: absolute; right: 0%;">
+  </div>
+
+</body>
+
+</html>

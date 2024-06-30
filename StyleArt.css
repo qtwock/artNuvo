@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Forum&family=Lobster&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lobster&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&family=Lobster&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Forum&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+/*
+Ysabeau SC
+Poiret One
+EB Garamond
+Noto Serif Display
+Playfair Display
+Amatic SC
+*/
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #d9a46f;
+  border-radius: 10px;
+  border: 2px solid #474847;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #474847;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(Img/Fon3.jpg);
+  background-repeat: repeat;
+  background-attachment: local;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 30px;
+  text-align: justify;
+}
+
+/* main ================================================ */
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/Fon.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+}
+
+.Slogan{
+  margin-top: 580px;
+  margin-inline: 25%;
+  text-align: center;
+  font-size: 3vw;
+  color: #fff;
+  font-family: "Noto Serif Display", sans-serif;
+  text-shadow: 0 0 10px #000;
+}
+
+/* ArtNuvo ================================================ */
+
+.ArtN {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.ArtN_Qube{
+  margin-left: 0%;
+  width: 30%;
+  height: 30%;
+  padding-bottom: 20%;
+}
+
+.ArtN_Qube .p1{
+  font-size: 50px;
+  font-family: "Noto Serif Display", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Director ================================================ */
+
+.Director {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.Director img{
+  width: 700px;
+  height: 700px;
+}
+
+.DirectorQ{
+    width: 472px; /* Ширина квадрата */
+    height: 484px; /* Высота квадрата */
+    padding: 1%;
+    padding-bottom: 20px;
+}
+
+.DirectorQ .p1{
+  font-size: 60px;
+  font-family: "Noto Serif Display", sans-serif;
+  margin: 0 auto;
+  letter-spacing: 5px;
+  color: #000;
+}
+
+.DirectorQ .Directorkom{
+  padding: 1%;
+  padding-bottom: 20px;
+  font-size: 60px;
+  font-family: "Amatic SC", sans-serif;
+  text-align: justify;
+  margin-top: -20px;
+}
+
+/* advantages ================================================ */
+
+.advantages {
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.advantages .p1{
+  position: relative;
+  justify-content: center;
+  top: -5%;
+  font-size: 70px;
+  font-family: "Noto Serif Display", sans-serif;
+  letter-spacing: 20px;
+}
+
+.con1{
+  position: relative;
+  width: 80%;
+  height: 10%;
+  top: -10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.con2{
+  position: relative;
+  width: 80%;
+  height: 10%;
+  top: -10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.con3{
+  position: relative;
+  width: 80%;
+  height: 10%;
+  top: -10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.con4{
+  position: relative;
+  width: 80%;
+  height: 10%;
+  top: -10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.con5{
+  position: relative;
+  width: 80%;
+  height: 10%;
+  top: -10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.con6{
+  position: relative;
+  width: 80%;
+  height: 10%;
+  top: -10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.con7{
+  position: relative;
+  width: 80%;
+  height: 10%;
+  top: -10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.advantages p{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 14%;
+}
+
+.advantages img{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  left: 18%;
+}
+
+/* Masters ================================================ */
+
+.Masters {
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Mascons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.card{
+  position: relative;
+  height: 597px;
+  width: 348px;
+  background: gray;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.5s, padding 0.5s;
+}
+
+.card img{
+  transition: filter 0.5s ease;
+}
+
+
+.card:hover img{
+  filter: brightness(50%) grayscale(40%);
+  transform: scale(1.2);
+}
+
+.info{
+  transition: filter 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.info p{
+  font-size: 25px;
+  color: white;
+  font-family: Courier New, sans-serif;
+}
+
+.card:hover .info{
+  display: Block;
+}
+
+.Masters .p1{
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  top: 50%;
+  font-family: "Noto Serif Display", sans-serif;
+  text-align: justify;
+  letter-spacing: 30px;
+}
+
+.Masters .p2{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  top: 50%;
+  font-family: "Amatic SC", sans-serif;
+  text-align: justify;
+}
+
+/* Practics ================================================ */
+
+.Practics{
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.Practics .p1{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: "Noto Serif Display", sans-serif;
+  text-align: justify;
+  letter-spacing: 30px;
+}
+
+.Practics .P5p {
+  width: 30%;
+  height: 70%;
+  padding: 2%;
+  text-align: justify;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.Practics .p2{
+  font-family: "Amatic SC", sans-serif;
+  top: 70%;
+  color: #fff;
+  background-color: #5a8686;
+  padding-inline: 5%;
+}
+
+/* Links ================================================ */
+
+.links{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.links .link-1{
+  width: 100%;
+  height: 49.5%;
+  background-image: url(img/con7-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link-1 p{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 25px;
+  margin-left: 5%;
+  margin-right: 50%;
+  text-align: justify;
+  color: #fff;
+}
+
+.link-1 .p1{
+  font-family: "Noto Serif Display", sans-serif;
+  font-size: 70px;
+  color: #fff;
+  letter-spacing: 30px;
+}
+
+.links .link-2{
+  width: 100%;
+  height: 49.5%;
+  margin-top: 5px;
+  background-image: url(img/con7-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link-2 p{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 25px;
+  margin-left: 5%;
+  margin-right: 50%;
+  text-align: justify;
+  color: #fff;
+}
+
+.link-2 .p2{
+  font-family: "Noto Serif Display", sans-serif;
+  font-size: 70px;
+  color: #fff;
+  letter-spacing: 30px;
+}
+
+.links .button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  top: 30%;
+  left: 20%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #d9a46f;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Amatic SC", sans-serif;;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: #d9a46f;
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+/* Podval ================================================ */
+
+.Podval{
+  width: 100%;
+  height: 100%;
+}
+
+/* media ================================================ */
+
+@media (max-width: 1200px){
+  body{
+    font-size: 25px;
+  }
+
+  .main{
+    background-size: contain;
+    height: auto;
+  }
+
+  .Slogan{
+    margin-top: 375px;
+  }
+
+  .Director img{
+    width: 600px;
+    height: 600px;
+  }
+
+  .DirectorQ .p1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .DirectorQ .Directorkom{
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .link-1 .p1{
+    font-size: 30px;
+    letter-spacing: 20px;
+  }
+
+  .link-1 p{
+    font-size: 20px;
+  }
+
+  .link-2 .p2{
+    font-size: 20px;
+    letter-spacing: 20px;
+  }
+
+  .link-2 p{
+    font-size: 15px;
+    margin-right: 55%;
+  }
+}
+
+@media (max-width: 992px){
+  body{
+    font-size: 20px;
+  }
+
+  .main{
+    background-size: contain;
+    height: auto;
+  }
+
+  .Slogan{
+    margin-top: 300px;
+  }
+
+  .Director img{
+    width: 500px;
+    height: 500px;
+  }
+  .DirectorQ{
+    width: auto; /* Ширина квадрата */
+    height: auto; /* Высота квадрата */
+  }
+
+  .DirectorQ .p1{
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .DirectorQ .Directorkom{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .link-1 .p1{
+    font-size: 20px;
+    letter-spacing: 20px;
+  }
+
+  .link-1 p{
+    font-size: 15px;
+    margin-right: 55%;
+  }
+
+  .link-2 .p2{
+    font-size: 20px;
+    letter-spacing: 20px;
+  }
+
+  .link-2 p{
+    font-size: 15px;
+    margin-right: 55%;
+  }
+}
+
+@media (max-width: 768px){
+  .main{
+    background-size: contain;
+    height: auto;
+  }
+
+  .Director img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px){
+  .main{
+    background-size: contain;
+    height: auto;
+  }
+
+  
+}
+
+@media (max-width: 320px){
+  .main{
+    background-size: contain;
+    height: auto;
+  }
+
+  
+}

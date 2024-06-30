@@ -1,0 +1,275 @@
+.infoA .modal{
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: black;
+  font-size: 25px;
+  font-family: "Playfair Display" sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoB .modal{
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: black;
+  font-size: 28px;
+  font-family: "Playfair Display" sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoC .modal{
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: black;
+  font-size: 25px;
+  font-family: "Playfair Display" sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoD .modal{
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: black;
+  font-size: 25px;
+  font-family: "Playfair Display" sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoE .modal{
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: black;
+  font-size: 25px;
+  font-family: "Playfair Display" sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoF .modal{
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: black;
+  font-size: 25px;
+  font-family: "Playfair Display" sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .modal-window {
+
+  position: relative;
+  background-color: #fff;
+  margin: 0% auto;
+  padding-left: 2%;
+  padding-right: 40%;
+  width: 80%;
+  height: 80%;
+  z-index: 3;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+.modal-window .p2{
+  position: relative;
+  font-size: 28px;
+  font-family: "Playfair Display" sans-serif;
+  color: black;
+  margin-left: 10%;
+}
+
+.modal-window p{
+  position: relative;
+  margin-left: 10%;
+  margin-block: 7%;
+  font-size: 28px;
+}
+
+.modal .DP{
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  width: 30%;
+  height: 90%;
+  background-image: url(img/DP.jpg);
+  background-size: cover;
+}
+
+.modal .IK{
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  width: 30%;
+  height: 90%;
+  background-image: url(img/IK.jpg);
+  background-size: cover;
+}
+
+.modal .BA{
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  width: 30%;
+  height: 90%;
+  background-image: url(img/BiP.jpg);
+  background-size: cover;
+}
+
+.modal .DR{
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  width: 30%;
+  height: 90%;
+  background-image: url(img/DR.jpg);
+  background-size: cover;
+}
+
+.modal .RM{
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  width: 30%;
+  height: 90%;
+  background-image: url(img/DR.jpg);
+  background-size: cover;
+}
+
+.modal .RS{
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  width: 30%;
+  height: 90%;
+  background-image: url(img/RS.jpg);
+  background-size: cover;
+}
+
+.modal-window .close {
+  position: absolute;
+  top: -80%;
+  right: 2%;
+  font-size: 40px;
+  border: none;
+  background: none;
+  opacity: 0.7;
+  font-family: "EB Garamond", sans-serif;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+button {
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+ bottom: 10%;
+}
+
+button.open-modal {
+ width: 12rem;
+ height: auto;
+}
+
+button.open-modal .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: #eba66c;
+ border-radius: 1.625rem;
+}
+
+button.open-modal .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+button.open-modal .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+button.open-modal .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+button:hover .circle {
+ width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+ color: #fff;
+}

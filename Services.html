@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ArtNuvo</title>
+  <link rel="shortcut icon" type="image/jpg" href="Img/Logo1.png">
+  <link rel="stylesheet" type="text/css" href="StyleSer.css">
+  <link rel="stylesheet" type="text/css" href="Header1.css">
+  <link rel="stylesheet" type="text/css" href="DIBP.css">
+  <link rel="stylesheet" type="text/css" href="Room.css">
+  <link rel="stylesheet" type="text/css" href="Podval.css">
+  <link rel="stylesheet" type="text/css" href="Form.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="left-section">
+      <img src="Img/Logo1.png" alt="Логотип" width="70px" height="70px">
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html" class="link1">Главная</a></li>
+          <li><a href="Services.html" class="link1">Услуги</a></li>
+          <li><a href="Training.html" class="link1">Обучение</a></li>
+          <li><a href="Contacts.html" class="link1">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right-section">
+      <div class="wrapper">
+
+        <!-- Иконка Nomer -->
+        <div class="icon nomer" data-default="Img/Nomer.png" data-hover="Img/Nomer1.png">
+          <div class="tooltip">+7(912)345-67-89</div>
+          <!-- Всплывающая подсказка -->
+          <!-- Иконка -->
+          <span><img src="Img/Nomer.png" alt="Nomer"></span>
+        </div>
+
+        <!-- Иконка WhatsApp -->
+        <div class="icon whatsapp" data-default="Img/WA.png" data-hover="Img/WA1.png">
+          <!-- Всплывающая подсказка -->
+          <!-- Иконка -->
+          <span><img src="Img/WA.png" alt="WhatsApp"></span>
+        </div>
+
+        <!-- Иконка Telegram -->
+        <div class="icon telegram" data-default="Img/TG.png" data-hover="Img/TG1.png">
+          <!-- Всплывающая подсказка -->
+          <!-- Иконка -->
+          <span><img src="Img/TG.png" alt="Telegram"></span>
+        </div>
+
+        <!-- Иконка VK -->
+        <div class="icon vkontakte" data-default="Img/VK.png" data-hover="Img/VK1.png">
+          <!-- Всплывающая подсказка -->
+          <!-- Иконка -->
+          <span><img src="Img/VK.png" alt="vkontakte"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        var icons = document.querySelectorAll('.wrapper .icon');
+
+        icons.forEach(function (icon) {
+          var img = icon.querySelector('img');
+          var defaultSrc = img.getAttribute('src'); // Получаем путь к изображению по умолчанию
+          var hoverSrc = icon.getAttribute('data-hover'); // Получаем путь к изображению при наведении
+
+          icon.addEventListener('mouseover', function () {
+            img.src = hoverSrc; // Заменяем изображение при наведении
+          });
+
+          icon.addEventListener('mouseout', function () {
+            img.src = defaultSrc; // Возвращаем изображение по умолчанию при уводе курсора
+          });
+        });
+      });
+    </script>
+    </div>
+
+  </header>
+
+  <div class="Opis">
+    <p>УСЛУГИ</p>
+  </div>
+  <div class="OpisQ">
+    <p><b>Мастерская АртНуво, предлагает богатый ассортимент творческих услуг, по индивидуальным проектам.</b></p>
+  </div>
+
+  <div class="Serv">
+    <div class="DP" id="DP">
+      <div class="infoA">
+        <p class="p1">Нанесение декоративных покрытий</p>
+        <button class="open-modal">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+        </button>
+
+        <div class="modal">
+          <div class="modal-window">
+            <p class="p2"><span
+                style="font-size: 56px; font-family: Noto Serif Display; position: relative; left: 10%;transform: translateX(-10%);">Декоративная
+                штукатурка</span>
+              <br>
+              <br>Это разнообразные <span style="border-bottom: 5px solid #538987">отделочные материалы</span>,
+              придающие поверхности уникальный вид.
+            </p>
+            <p>Они могут быть гладкими (например, венецианская штукатурка, материалы с эффектом шелка или замши) или
+              иметь фактурное покрытие (имитация камня, бетона, дерева и других текстур).</p>
+            <p>Используя декоративные материалы, мастера создают разные текстуры и фактуры на стенах, обогащая интерьер
+              помещения. Эти материалы содержат <span style="border-bottom: 5px solid #538987">специальные добавки для
+                уникальности и долговечности</span>, обеспечивая красивое покрытие стен.</p>
+
+            <div class="DP">
+
+            </div>
+            <button class="close">x</button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="IK">
+      <div class="infoB">
+        <p class="p1">Изготовление интерьерных картин и панно</p>
+        <button class="open-modal">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+        </button>
+
+        <div class="modal">
+          <div class="modal-window">
+            <p class="p2">
+              <span
+                style="font-size: 56px; font-family: Noto Serif Display; position: relative; left: 8%; transform: translateX(-8%);">Интерьерные
+                картины и панно</span><br>
+              <br>Это произведения живописи и графики, созданные с особым вниманием к <span
+                style="border-bottom: 5px solid #538987">декоративному украшению помещений</span>, придающие интерьеру
+              уникальный характер и выражающие эстетические предпочтения владельца.
+            </p>
+            <p>Мастерская АртНуво воплощает авторские идеи для интерьерных картин, учитывая настроение и эмоции
+              заказчиков.</p>
+            <p>В нашей подборке идей вы обязательно найдете картины, которые сделают ваш интерьер особенным и
+              уникальным.</p>
+            <div class="IK">
+            </div>
+            <button class="close">x</button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="BA">
+      <div class="infoC">
+        <p class="p1">Изготовление Барельефа</p>
+
+
+        <button class="open-modal">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+        </button>
+
+        <div class="modal">
+          <div class="modal-window">
+            <p class="p2"><span
+                style="font-size: 56px; font-family: Noto Serif Display; position: relative; left: 35%; transform: translateX(-35%);">Барельеф
+            </p></span>
+            <p>Это декоративная фигура, добавляющая <span style="border-bottom: 5px solid #538987">объем плоской
+                поверхности</span>. Применяется для украшения интерьера, создавая уникальную атмосферу и изысканность.
+            </p>
+            <p>Идеи для барельефов? Наши мастера принимают заказы по вашим эскизам. Приглашаем на консультацию для
+              расчета бюджета и создания техзадания. Идеи барельефов на сайте – возможно, вы найдете то, что ищете.</p>
+            <div class="BA">
+
+            </div>
+            <button class="close">x</button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="DR">
+      <div class="infoD">
+        <p class="p1">Нанесение декоротивной росписи</p>
+
+        <button class="open-modal">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+        </button>
+
+        <div class="modal">
+          <div class="modal-window">
+            <p class="p2"><span
+                style="font-size: 56px; font-family: Noto Serif Display; position: relative; left: 15%; transform: translateX(-15%);">Декоративная
+                роспись</span></p>
+            <p>В нашей команде работают художники-реставраторы, которые занимаются росписью. Они помогут вам не только
+              создать <span style="border-bottom: 5px solid #538987">желаемый узор</span>, но и восстановить роспись
+              через годы при необходимости, вернув ее к первоначальному виду.</p>
+            <p>Современная роспись выполняется с использованием экологически чистых красок, обладающих антивандальными
+              свойствами. Этот факт вызывает увеличенный интерес к организации росписи в детских комнатах, игровых
+              зонах, кафе, ресторанах и других общественных пространствах, где необходимо добавить яркие акценты.</p>
+            <div class="DR">
+
+            </div>
+            <button class="close">x</button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="RM">
+      <div class="infoE">
+        <p class="p1">Редизайн мебели</p>
+
+        <button class="open-modal">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+        </button>
+
+        <div class="modal">
+          <div class="modal-window">
+            <p class="p2"><span
+                style="font-size: 56px; font-family: Noto Serif Display; position: relative; left: 25%; transform: translateX(-25%);">Редизайн
+                мебели</span></p>
+            <p>Обновляем мебель любого типа: от столов до ламп. Выберите стиль, материалы и цвета. Гарантируем высокое
+              качество и индивидуальный подход к каждому проекту.</p>
+            <p>Наши профессионалы помогут вам создать уникальный дизайн для вашей мебели,
+              придавая ей новый облик и функциональность. Мы используем передовые технологии и
+              высококачественные материалы, чтобы обеспечить долговечность и комфорт вашей
+              обновленной мебели.</p>
+            <div class="DR">
+
+            </div>
+            <button class="close">x</button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="RS">
+      <div class="infoF">
+        <p class="p1">Реставрация стен</p>
+
+        <button class="open-modal">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+        </button>
+
+        <div class="modal">
+          <div class="modal-window">
+            <p class="p2"><span
+                style="font-size: 56px; font-family: Noto Serif Display; position: relative; left: 25%; transform: translateX(-25%);">Реставрация
+                стен</span></p>
+            <p>Преобразите свои стены с помощью профессиональной реставрации! От
+              подготовки поверхности до художественной росписи - доверьте свой интерьер
+              опытным мастерам. Обновите свое пространство и придайте ему уникальный стиль
+              с нашей помощью!</p>
+            <p>Мы тщательно очистим стены от старых покрытий и выровняем их, создавая идеальную основу для дальнейшей
+              отделки. Наша грунтовка обеспечит надежное сцепление новых материалов с поверхностью.</p>
+            <div class="RS">
+
+            </div>
+            <button class="close">x</button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const openModalBtns = document.querySelectorAll(".open-modal");
+        const modals = document.querySelectorAll(".modal");
+        const closeModalBtns = document.querySelectorAll(".close");
+
+        openModalBtns.forEach(function (btn, index) {
+          btn.addEventListener("click", function () {
+            modals[index].style.display = "flex";
+          });
+        });
+
+        closeModalBtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            this.closest(".modal").style.display = "none";
+          });
+        });
+      });
+    </script>
+
+  </div>
+
+  <div class="Room" id="Room">
+    <div class="block2a">
+      <div class="Pod1">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Песок</p>
+
+        <img src="Img/Room/V1a.png">
+        <p class="p12">Декоративное покрытие,
+          выполненное в технике "песок", придает поверхности изысканную
+          текстуру и визуальную глубину, создавая эффект легкой шероховатости и бархатистости.
+          Это покрытие напоминает песчаные дюны, переливающиеся на свету, и добавляет
+          пространству ощущение тепла и естественной элегантности. Мелкие песчинки в составе
+          покрытия создают игру света и тени, что делает стены живыми и динамичными. Техника
+          "песок" идеально подходит для создания уютной и стильной атмосферы в интерьере,
+          подчёркивая его индивидуальность и художественный вкус.</p>
+      </div>
+      <div class="Pod2">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Барельеф</p>
+
+        <img src="Img/Room/V2a.png">
+        <p class="p12">Серый цвет в барельефе
+          обладает особой символикой, воплощая в себе стабильность, сдержанность и респектабельность. В таком барельефе
+          использование серого цвета создает эффект глубины и объема, подчеркивая детали и фактуры скульптурного
+          изображения.
+          Оттенки серого могут быть разнообразными – от светлых до темных, что позволяет создать интересные переходы и
+          акценты.
+          Серый барельеф может отражать различные темы и мотивы – от классических и античных сюжетов до современных
+          абстракций
+          и символических образов. Этот стильный и утонченный элемент декора прекрасно дополнит интерьер, придавая ему
+          изысканный
+          и привлекательный вид.</p>
+      </div>
+      <div class="Pod3">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Барельеф</p>
+
+        <img src="Img/Room/V3a.png">
+        <p class="p12">Песчаный цвет в барельефе
+          придает ему
+          естественность, теплоту и уют, словно мы находимся на песчаном пляже под ласковыми лучами солнца.
+          Этот вид барельефа создает ощущение легкости и воздушности, будто изображение написано пальцем на мягком
+          песке.
+          Песчаные оттенки могут быть различными – от светло-бежевых до глубоких коричневых, что позволяет передать
+          разнообразие
+          текстур и тонов, как в природе. Такое произведение искусства прекрасно впишется в интерьер, добавив в него уют
+          и природную гармонию.
+        </p>
+      </div>
+      <div class="Pod4">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Мрамор</p>
+        <img src="Img/Room/V4a.png">
+        <p class="p12">Техника мраморирования создает
+          впечатляющие
+          иллюзии мрамора, захватывающие воображение и добавляющие роскошь в любое пространство. Строгость и великолепие
+          мрамора переданы
+          с помощью мягких переходов цветов и ярко выраженных узоров, которые создают эффект глубины и текстуры.
+          Используемая техника позволяет достичь различных оттенков и видов мрамора, начиная от классических белых и
+          черных мраморных
+          узоров до уникальных и экзотических комбинаций цветов. Каждая деталь в процессе мраморирования обращена к
+          созданию гармоничного
+          и реалистичного образа мрамора, который привносит роскошь и изысканность в интерьер или дизайн.</p>
+      </div>
+      <div class="Pod5">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Мрамор</p>
+        <img src="Img/Room/V5a.png">
+        <p class="p12">Техника мраморирования создает
+          впечатляющие
+          иллюзии мрамора, захватывающие воображение и добавляющие роскошь в любое пространство. Строгость и великолепие
+          мрамора переданы
+          с помощью мягких переходов цветов и ярко выраженных узоров, которые создают эффект глубины и текстуры.
+          Используемая техника позволяет достичь различных оттенков и видов мрамора, начиная от классических белых и
+          черных мраморных
+          узоров до уникальных и экзотических комбинаций цветов. Каждая деталь в процессе мраморирования обращена к
+          созданию гармоничного
+          и реалистичного образа мрамора, который привносит роскошь и изысканность в интерьер или дизайн.</p>
+      </div>
+      <div class="Pod6">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Оникс</p>
+        <img src="Img/Room/V6a.png">
+        <p class="p12">Техника "Оникс" создаёт
+          изысканные поверхности,
+          напоминающие благородный оникс с полупрозрачностью и многослойными узорами. Многослойное нанесение придаёт
+          глубину и сложность,
+          создавая эффект естественного камня с плавными переходами цвета. Сочетание оттенков усиливает визуальный
+          эффект и создаёт иллюзию
+          природной текстуры. Поверхности, выполненные в этой технике, излучают свет и добавляют интерьеру утончённую
+          роскошь. "Оникс"
+          идеально подходит для акцентных стен, элегантных панелей и декоративных элементов, привнося в пространство
+          природную красоту и
+          изысканность.</p>
+      </div>
+      <div class="Pod7">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Фактура</p>
+        <img src="Img/Room/V7a.png">
+        <p class="p12">Фактурное декоративное
+          покрытие – это изысканный
+          метод отделки, придающий поверхности уникальную текстуру и визуальную глубину. Этот вид покрытия создаётся с
+          использованием
+          различных материалов и техник нанесения, создавая разнообразные рельефные узоры и объемные эффекты. Фактурные
+          покрытия могут
+          имитировать натуральные материалы, такие как камень, древесина или ткань, а также быть абстрактными, создавая
+          оригинальные дизайны.</p>
+      </div>
+      <div class="Pod8">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Мокрый шелк</p>
+        <img src="Img/Room/V8a.png">
+        <p class="p12">"Мокрый шелк" - это утончённая
+          декоративная техника,
+          которая придаёт поверхности неповторимую текстуру и блеск, напоминающие шелковую ткань. Этот метод позволяет
+          создать эффект мягкости
+          и глубины на различных поверхностях, таких как стены или мебель. При использовании техники "Мокрый шелк"
+          наносят специальный состав
+          с помощью кисти или шпателя, а затем обрабатывают поверхность для создания гладкого и блестящего эффекта.
+          Результатом является
+          элегантное и изысканное покрытие, придающее интерьеру особую изысканность и шарм.</p>
+      </div>
+      <div class="Pod9">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Микроцемент</p>
+        <img src="Img/Room/V9a.png">
+        <p class="p12">Микроцемент — это современная
+          декоративная техника,
+          создающая стильные и прочные поверхности с уникальной текстурой. Его можно наносить тонким слоем на бетон,
+          гипсокартон, дерево или
+          плитку, создавая гладкое покрытие с характерной текстурой и матовым блеском. Микроцемент отличается высокой
+          прочностью и стойкостью
+          к повреждениям, что делает его идеальным для зон с высокой проходимостью. Цветовые решения варьируются от
+          классических серых и белых
+          до насыщенных и ярких оттенков.</p>
+      </div>
+      <div class="Pod10">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Венецианская</p>
+        <img src="Img/Room/V10a.png">
+        <p class="p12">Венецианская штукатурка — это
+          декоративная техника,
+          которая придаёт стенам гладкую, глянцевую поверхность с глубиной и эффектом мрамора. Техника нанесения
+          венецианской штукатурки
+          включает в себя многослойное нанесение тонких слоёв специальной смеси на основе извести и мраморной пыли.
+          После нанесения каждый
+          слой тщательно полируется, что позволяет добиться характерного глянцевого блеска и глубины. Цветовые
+          комбинации могут варьироваться
+          от классических белых и бежевых тонов до насыщенных цветовых решений, что делает эту технику универсальной и
+          подходящей для различных
+          стилей интерьера.</p>
+      </div>
+      <div class="Pod11">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Замша</p>
+        <img src="Img/Room/V11a.png">
+        <p class="p12">Декоративное покрытие с
+          техникой "Замша" придаёт
+          стенам мягкую и бархатистую текстуру, напоминающую натуральную замшу. Это покрытие создаёт уютную и элегантную
+          атмосферу в интерьере.
+          С помощью специальных материалов и инструментов достигается эффект мягкости и матового блеска. Поверхность
+          может быть выполнена в
+          различных оттенках, от светлых до насыщенных, что позволяет легко вписать её в любой стиль интерьера.</p>
+      </div>
+      <div class="Pod12">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Барельеф</p>
+        <img src="Img/Room/V12a.png">
+        <p class="p12">Барельеф - это выразительная
+          техника декорирования
+          поверхностей, при которой создается объемный рельефный рисунок или узор. Она позволяет добавить глубину и
+          текстурность интерьеру
+          или экстерьеру, придавая поверхности художественное изящество и оригинальность.
+
+          Для создания барельефа используются различные материалы, такие как гипс, штукатурка, пластмасса или дерево.
+          Мастер манипулирует
+          материалом, нанося его на основу и моделируя желаемый рисунок или узор. Этот процесс может быть ручным, с
+          использованием инструментов
+          и форм для создания деталей, или с использованием специальных технологий, таких как литье.</p>
+      </div>
+      <div class="Pod13">
+        <p class="pDP">>Декоративное покрытие</p>
+        <p class="pT">Техника: Фактура</p>
+        <img src="Img/Room/V13a.png">
+        <p class="p12">Фактурное декоративное
+          покрытие – это изысканный
+          метод отделки, придающий поверхности уникальную текстуру и визуальную глубину. Этот вид покрытия создаётся с
+          использованием
+          различных материалов и техник нанесения, создавая разнообразные рельефные узоры и объемные эффекты. Фактурные
+          покрытия могут
+          имитировать натуральные материалы, такие как камень, древесина или ткань, а также быть абстрактными, создавая
+          оригинальные дизайны.</p>
+      </div>
+      <div class="Pod14">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: Фактура</p>
+        <img src="Img/Room/V14a.png">
+        <p class="p12">Фактурное декоративное
+          покрытие – это изысканный
+          метод отделки, придающий поверхности уникальную текстуру и визуальную глубину. Этот вид покрытия создаётся с
+          использованием
+          различных материалов и техник нанесения, создавая разнообразные рельефные узоры и объемные эффекты. Фактурные
+          покрытия могут
+          имитировать натуральные материалы, такие как камень, древесина или ткань, а также быть абстрактными, создавая
+          оригинальные дизайны.</p>
+      </div>
+      <div class="Pod15">
+        <p class="pDP">Декоративное покрытие</p>
+        <p class="pT">Техника: песок</p>
+
+        <img src="Img/Room/V15a.png">
+        <p class="p12">Декоративное покрытие,
+          выполненное в технике "песок", придает поверхности изысканную
+          текстуру и визуальную глубину, создавая эффект легкой шероховатости и бархатистости.
+          Это покрытие напоминает песчаные дюны, переливающиеся на свету, и добавляет
+          пространству ощущение тепла и естественной элегантности. Мелкие песчинки в составе
+          покрытия создают игру света и тени, что делает стены живыми и динамичными. Техника
+          "песок" идеально подходит для создания уютной и стильной атмосферы в интерьере,
+          подчёркивая его индивидуальность и художественный вкус.</p>
+      </div>
+    </div>
+    <p class="p1">Примерный стиль оформления</p>
+
+    <div class="background-selector">
+
+      <div class="controls">
+        <img id="prevButton" src="Img/prev1.png" alt="Previous">
+      </div>
+
+      <div class="blockQ" id="blockQ">
+        <img src="Img/Room/Sofa.png" alt="Мебель">
+      </div>
+      <div class="background-options">
+
+        <label for="bg1">
+          <input type="radio" id="bg1" name="background" value="Img/Room/V1.jpg">
+          <img src="Img/Room/V1.jpg" alt="Фон 1">
+        </label>
+        <label for="bg2">
+          <input type="radio" id="bg2" name="background" value="Img/Room/V2.jpg">
+          <img src="Img/Room/V2.jpg" alt="Фон 2">
+        </label>
+        <label for="bg3">
+          <input type="radio" id="bg3" name="background" value="Img/Room/V3.jpg">
+          <img src="Img/Room/V3.jpg" alt="Фон 3">
+        </label>
+        <label for="bg4">
+          <input type="radio" id="bg4" name="background" value="Img/Room/V4.jpg">
+          <img src="Img/Room/V4.jpg" alt="Фон 4">
+        </label>
+        <label for="bg5">
+          <input type="radio" id="bg5" name="background" value="Img/Room/V5.jpg">
+          <img src="Img/Room/V5.jpg" alt="Фон 5">
+        </label>
+
+        <label for="bg6">
+          <input type="radio" id="bg6" name="background" value="Img/Room/V6.jpg">
+          <img src="Img/Room/V6.jpg" alt="Фон 6">
+        </label>
+        <label for="bg7">
+          <input type="radio" id="bg7" name="background" value="Img/Room/V7.jpg">
+          <img src="Img/Room/V7.jpg" alt="Фон 7">
+        </label>
+        <label for="bg8">
+          <input type="radio" id="bg8" name="background" value="Img/Room/V8.jpg">
+          <img src="Img/Room/V8.jpg" alt="Фон 8">
+        </label>
+        <label for="bg9">
+          <input type="radio" id="bg9" name="background" value="Img/Room/V9.jpg">
+          <img src="Img/Room/V9.jpg" alt="Фон 9">
+        </label>
+        <label for="bg10">
+          <input type="radio" id="bg10" name="background" value="Img/Room/V10.jpg">
+          <img src="Img/Room/V10.jpg" alt="Фон 10">
+        </label>
+        <label for="bg11">
+          <input type="radio" id="bg11" name="background" value="Img/Room/V11.jpg">
+          <img src="Img/Room/V11.jpg" alt="Фон 11">
+        </label>
+        <label for="bg12">
+          <input type="radio" id="bg12" name="background" value="Img/Room/V12.jpg">
+          <img src="Img/Room/V12.jpg" alt="Фон 12">
+        </label>
+        <label for="bg13">
+          <input type="radio" id="bg13" name="background" value="Img/Room/V13.jpg">
+          <img src="Img/Room/V13.jpg" alt="Фон 13">
+        </label>
+        <label for="bg14">
+          <input type="radio" id="bg14" name="background" value="Img/Room/V14.jpg">
+          <img src="Img/Room/V14.jpg" alt="Фон 14">
+        </label>
+        <label for="bg15">
+          <input type="radio" id="bg15" name="background" value="Img/Room/V15.jpg">
+          <img src="Img/Room/V15.jpg" alt="Фон 15">
+        </label>
+
+      </div>
+      <div class="controls">
+        <img style="margin-top: 20px" id="nextButton" src="Img/next1.png" alt="Next">
+      </div>
+    </div>
+
+
+
+    <script>
+      const backgroundRadios = document.querySelectorAll('input[name="background"]');
+      const block1 = document.getElementById('blockQ');
+      const prevButton = document.getElementById('prevButton');
+      const nextButton = document.getElementById('nextButton');
+      const numToShow = 5;
+      let currentIndex = 0;
+
+      backgroundRadios.forEach(radio => {
+        radio.addEventListener('change', function () {
+          if (this.checked) {
+            currentIndex = Array.from(backgroundRadios).indexOf(this); // Обновляем индекс текущего выбранного изображения
+            changeBackground();
+            updateButtons();
+            updateImages();
+          }
+        });
+      });
+
+      prevButton.addEventListener('click', () => {
+        currentIndex = Math.max(0, currentIndex - numToShow);
+        updateButtons();
+        updateImages();
+      });
+
+      nextButton.addEventListener('click', () => {
+        currentIndex = Math.min(currentIndex + numToShow, backgroundRadios.length - numToShow);
+        updateButtons();
+        updateImages();
+      });
+
+      function changeBackground() {
+        const selectedImage = backgroundRadios[currentIndex].value;
+        if (selectedImage === 'Img/Room/V1.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R1.jpg)`; // Изменяем фон на b.jpg, когда выбрано q.jpg
+        } else if (selectedImage === 'Img/Room/V2.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R2.jpg)`; // Изменяем фон на f.jpg, когда выбрано w.jpg
+        } else if (selectedImage === 'Img/Room/V3.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R3.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V4.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R4.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V5.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R5.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V6.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R6.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V7.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R7.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V8.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R8.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V9.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R9.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V10.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R10.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V11.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R11.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V12.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R12.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V13.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R13.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V14.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R14.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else if (selectedImage === 'Img/Room/V15.jpg') {
+          block1.style.backgroundImage = `url(Img/Room/R15.jpg)`; // Изменяем фон на d.jpg, когда выбрано e.jpg
+        } else {
+          block1.style.backgroundImage = `url(${selectedImage})`; // Изменяем фон на выбранное изображение
+        }
+        updateBlocksVisibility(); // Обновляем видимость блоков
+      }
+
+      function updateButtons() {
+        prevButton.disabled = currentIndex === 0;
+        nextButton.disabled = currentIndex >= backgroundRadios.length - numToShow;
+      }
+
+      function updateImages() {
+        const currentImageIndex = Math.floor(currentIndex / numToShow) * numToShow; // Находим ближайшую позицию, кратную numToShow
+        backgroundRadios.forEach((radio, index) => {
+          radio.parentElement.style.display = index >= currentImageIndex && index < currentImageIndex + numToShow ? 'block' : 'none';
+        });
+      }
+
+      function updateBlocksVisibility() {
+        const blocks = document.querySelectorAll('.block2a > div');
+        blocks.forEach(block => {
+          block.style.display = 'none'; // Сначала скрываем все блоки
+        });
+        const selectedBlock = document.querySelector(`.Pod${currentIndex + 1}`); // Получаем выбранный блок
+        if (selectedBlock) {
+          selectedBlock.style.display = 'block'; // Показываем выбранный блок
+        }
+      }
+
+      window.addEventListener('load', () => {
+        updateButtons();
+        updateImages();
+        changeBackground(); // Добавляем вызов функции для установки начального фона
+      });
+    </script>
+  </div>
+
+  <div class="Request" id="Request">
+    <p class="p1">Оставьте заявку для индивидуальной консультации от наших экспертов.</p>
+    <div class="RequestA">
+      <img src="Img/Sob1.jpg">
+    </div>
+
+    <div class="form">
+      <div class="title">Ваши контакты</div>
+      <div class="subtitle">Мы свяжемся в ближайшее время</div>
+
+      <div class="input-container ic1">
+        <input placeholder="" type="text" class="input" id="firstname">
+        <div class="cut"></div>
+        <label class="placeholder" for="firstname">Имя</label>
+      </div>
+
+      <div class="input-container ic2">
+        <input placeholder="" type="text" class="input" id="phone" required maxlength="19">
+        <div class="cut"></div>
+        <label class="placeholder" for="phone">Телефон</label>
+      </div>
+      <div class="input-container ic2">
+        <input placeholder="" type="text" class="input" id="email">
+        <div class="cut cut-short"></div>
+        <label class="placeholder" for="email">Email</label>
+      </div>
+      <div class="input-container ic3">
+        <label for="question1" style="font-size: 18px; font-family: Playfair Display, sans-serif;">Назначение помещения
+          под отделку:</label>
+        <select id="question1" class="input" required>
+          <option value="" disabled selected>Выберите ответ</option>
+          <option value="answer1">Частный дом</option>
+          <option value="answer2">Квартира</option>
+          <option value="answer3">Общественное простанство</option>
+          <option value="remove">Нет ответа</option>
+        </select>
+      </div>
+      <div class="input-container ic4">
+        <label for="question2"
+          style="font-size: 18px; font-family: Playfair Display, sans-serif; text-align: left;">Наличие
+          дизайн-проекта:</label>
+        <select id="question2" class="input" required>
+          <option value="" disabled selected>Выберите ответ</option>
+          <option value="answer1">Есть дизайн проект</option>
+          <option value="answer2">Дизайн проект на стадии разработки</option>
+          <option value="answer3">Дизайн проект отсутствует</option>
+        </select>
+      </div>
+      <button class="submit" type="text">Подтвердить</button>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const phoneInput = document.getElementById('phone');
+
+        phoneInput.addEventListener('focus', function () {
+          if (!phoneInput.value.startsWith('+7')) {
+            phoneInput.value = '+7 ';
+          }
+        });
+
+        phoneInput.addEventListener('input', function () {
+          let phoneValue = phoneInput.value.replace(/\D/g, '');
+
+          if (!phoneValue.startsWith('7')) {
+            phoneValue = '7' + phoneValue;
+          }
+
+          if (phoneValue.length > 11) {
+            phoneValue = phoneValue.slice(0, 11);
+          }
+
+          const formattedPhone = phoneValue.replace(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/, '+$1 ($2) $3-$4-$5');
+          phoneInput.value = formattedPhone;
+        });
+
+        phoneInput.addEventListener('keydown', function (e) {
+          if (phoneInput.value.startsWith('+7') && e.key === 'Backspace' && phoneInput.selectionStart <= 3) {
+            e.preventDefault();
+          }
+        });
+      });
+    </script>
+  </div>
+
+  <div class="Way">
+    <p class="p1">Наш путь работы с заказщиком</p>
+    <p class="p2" style="top: 4%">Консультация</p>
+    <p class="p3" style="top: 16%">Разработка образцов</p>
+    <p class="p2" style="top: 28%">Коммерческое предложение</p>
+    <p class="p3" style="top: 40%">Замеры объекта</p>
+    <p class="p2" style="top: 52%">Договор</p>
+    <p class="p3" style="top: 64%">Выполнение работы</p>
+    <p class="p2" style="top: 76%">Акт сдачи</p>
+    <p class="p3" style="top: 88%">Гарантия</p>
+  </div>
+
+  <div class="Podval">
+    <div class="ConPodval1">
+      <div class="map">
+        <div class="script8">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa96077b13825e8368b8f44d8e6f515f9619d1c73a47e298289bb2c2b4b36faa5&amp;width=777&amp;height=502&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+      <p><span style="font-size:55px; font-family:Noto Serif Display;  letter-spacing: 20px;">Мы на карте</span>
+        <br>
+        <br>
+        Адрес: Вилеровский переулок 8, посёлок Шушары, Пушкинский район, Санкт-Петербург.
+        <br>
+        <br>
+        20 минут от станции метро Купчино
+        <br>
+        <br>
+        Мы работаем со Вторника по Воскресенье, с 11:00-19:00
+      </p>
+    </div>
+    <div class="ConPodval2">
+      <div class="menu">
+        <p style="text-decoration: underline;">Меню</p>
+        <a href="index.html" class="linMenu">Главная</a>
+        <a href="Services.html" class="linMenu">Услуги</a>
+        <a href="Training.html" class="linMenu">Обучение</a>
+        <a href="Contacts.html" class="linMenu">Контакты</a>
+      </div>
+
+      <div class="Ssylki">
+        <a href="Services.html#DP" class="linMenu">Виды услуг</a>
+        <a href="Services.html#block2" class="linMenu">Примерный стиль оформления</a>
+        <a href="Services.html#Request" class="linMenu">Заявка на услугу</a>
+        <a href="Training.html#KursK" class="linMenu">Курс обучения</a>
+        <a href="Training.html#Zap" class="linMenu">Запись на обучение</a>
+      </div>
+
+      <p class="p2"><img src="Img/Nomer1.png" width="15px" height="15px">
+        <span style="font-family: Times New Roman; color: #c6c6c6;">+7(123)456-78-90 </span>
+        <br>
+        <img src="Img/pochta.png" width="15px" height="15px">
+        <span style="color: #c6c6c6;">artnuvo@mail.ru</span>
+        <br>
+        <br>
+        <span style="font-size: 15px">Данный интернет-сайт носит исключительно информационный характер и ни при каких
+          условиях не является публичной офертой. ИП Абашкина Анастасия Васильевна, ИНН 507306368736, ОГРНИП
+          324508100135116. Все права защищены. АртНуво, 2020-2024</span>
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
